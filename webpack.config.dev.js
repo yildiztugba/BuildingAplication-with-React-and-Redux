@@ -28,18 +28,17 @@ module.exports ={
             favicon: "src/favicon.ico"
         })
     ],
-    module:{
-        rules:[
-            {
-                test:/\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: ["babel-loader","eslint-loader"]
-            },
-
-            {
-                test:/(\-.css)$/,
-                use: ["style-loader","css-loader"]
-            }
-        ]
-    }
+   module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader", "eslint-loader"]
+      },
+      {
+        test: /(\.css)$/,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  }
 };
