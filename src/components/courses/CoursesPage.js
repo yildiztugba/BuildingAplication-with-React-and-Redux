@@ -6,7 +6,7 @@ class CoursesPage extends React.Component{
 
         this.state={
             course: {
-                title:"";
+                title:""
             }
         };
     }
